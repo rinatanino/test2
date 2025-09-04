@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; }
+#board { display: grid; grid-template-columns: repeat(9, 40px); grid-template-rows: repeat(9, 40px); margin-bottom: 10px; }
+.square { width: 40px; height: 40px; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; }
+.highlight { background-color: #ffc; }
+#message { color: red; height: 1em; margin-bottom: 5px; }
+.turn { margin-bottom: 5px; font-weight: bold; }
+.square[draggable="true"] { cursor: grab; }
+#undo { margin-top: 5px; }
