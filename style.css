@@ -1,0 +1,78 @@
+body {
+  background:#222;
+  color:#eee;
+  font-family:sans-serif;
+  text-align:center;
+}
+.board {
+  background:#deb887;
+  display:grid;
+  grid-template-columns:repeat(9,1fr);
+  width:640px;
+  height:640px;
+  margin:10px auto;
+  border:2px solid #555;
+}
+.cell {
+  border:1px solid #555;
+  position:relative;
+  background:#f5deb3;
+}
+.piece {
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  cursor:pointer;
+  user-select:none;
+  font-family:'Yu Mincho', 'Hiragino Mincho ProN', 'serif';
+  color:#000;
+}
+.white {
+  transform:rotate(180deg);
+}
+.hand {
+  display:flex;
+  justify-content:center;
+  gap:4px;
+  min-height:40px;
+}
+.handPiece {
+  border:1px solid #888;
+  padding:2px 4px;
+  cursor:pointer;
+  color:#000;
+}
+.handBox{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4px;
+  width:640px;
+  margin:4px auto;
+}
+.handLabel{
+  color:#eee;
+}
+.promoted {
+  color:red;
+}
+.highlight {
+  background:rgba(255,255,0,0.3);
+}
+.modal {
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.modalContent{
+  background:#333;
+  padding:20px;
+}
