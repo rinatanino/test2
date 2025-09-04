@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "shogi.js": "^5.4.1"
+  }
+}
